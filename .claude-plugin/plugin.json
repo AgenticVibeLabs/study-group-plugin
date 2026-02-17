@@ -1,0 +1,10 @@
+{
+  "name": "study-group",
+  "version": "1.0.0",
+  "description": "GitHub 기반 책 스터디 관리: 저장소 초기화, PR 요약, Issue Q&A",
+  "author": {
+    "name": "roach",
+    "email": "dev0jsh@gmail.com"
+  },
+  "keywords": ["study-group", "book-study", "github", "collaboration"]
+}

@@ -1,0 +1,37 @@
+name: "Discussion"
+description: "함께 논의할 주제 제안"
+title: "[{{chapter}}] "
+labels: ["토론", "{{chapter}}"]
+body:
+  - type: input
+    id: chapter
+    attributes:
+      label: "Chapter"
+      description: "관련 챕터 번호"
+      placeholder: "ch01"
+    validations:
+      required: true
+  - type: textarea
+    id: topic
+    attributes:
+      label: "Discussion Topic"
+      description: "토론 주제를 명확하게 작성해주세요"
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: "Background"
+      description: "이 주제를 제안하게 된 배경이나 맥락"
+    validations:
+      required: true
+  - type: textarea
+    id: perspectives
+    attributes:
+      label: "Perspectives to Consider"
+      description: "고려해볼 만한 관점들"
+  - type: textarea
+    id: my-opinion
+    attributes:
+      label: "My Opinion"
+      description: "이 주제에 대한 본인의 생각"

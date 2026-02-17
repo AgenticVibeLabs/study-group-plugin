@@ -1,0 +1,42 @@
+name: "Question"
+description: "챕터 내용에 대한 질문"
+title: "[{{chapter}}] "
+labels: ["질문", "{{chapter}}"]
+body:
+  - type: input
+    id: chapter
+    attributes:
+      label: "Chapter"
+      description: "관련 챕터 번호"
+      placeholder: "ch01"
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: "Page / Section"
+      description: "관련 페이지 번호 또는 섹션명"
+      placeholder: "p.42 또는 'B-Tree Splitting'"
+  - type: textarea
+    id: quote
+    attributes:
+      label: "Related Quote"
+      description: "관련된 원문 인용구"
+      render: markdown
+  - type: textarea
+    id: question
+    attributes:
+      label: "Question"
+      description: "궁금한 점을 구체적으로 작성해주세요"
+    validations:
+      required: true
+  - type: textarea
+    id: current-understanding
+    attributes:
+      label: "Current Understanding"
+      description: "현재 본인이 이해하고 있는 내용"
+  - type: textarea
+    id: want-to-know
+    attributes:
+      label: "What I Want to Know"
+      description: "추가로 알고 싶은 점"

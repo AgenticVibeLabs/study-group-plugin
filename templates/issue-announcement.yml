@@ -1,0 +1,26 @@
+name: "Announcement"
+description: "스터디 공지사항"
+title: "[공지] "
+labels: ["공지"]
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: "Announcement"
+      description: "공지 내용을 작성해주세요"
+    validations:
+      required: true
+  - type: textarea
+    id: action-items
+    attributes:
+      label: "Action Items"
+      description: "멤버들이 해야 할 일 (체크리스트로 작성)"
+      placeholder: |
+        - [ ] 액션 아이템 1
+        - [ ] 액션 아이템 2
+  - type: input
+    id: deadline
+    attributes:
+      label: "Timeline / Deadline"
+      description: "관련 기한이 있다면 작성"
+      placeholder: "2025-01-15"
