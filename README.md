@@ -6,11 +6,16 @@ GitHub 기반 책 스터디 관리 플러그인 for Claude Code.
 
 ## 설치
 
-```bash
-claude plugin add ./study-group
+### Marketplace (권장)
+
+Claude Code 에서 아래 명령어를 실행하세요:
+
+```
+/plugin marketplace add AgenticVibeLabs/study-group-plugin
+/plugin install study-group@study-group-plugin
 ```
 
-또는 로컬 개발 시:
+### 로컬 개발
 
 ```bash
 claude --plugin-dir ./study-group
@@ -78,7 +83,8 @@ claude --plugin-dir ./study-group
 ```
 study-group/
 ├── .claude-plugin/
-│   └── plugin.json          # 플러그인 매니페스트
+│   ├── plugin.json          # 플러그인 매니페스트
+│   └── marketplace.json     # 마켓플레이스 매니페스트
 ├── commands/
 │   ├── init.md              # /study:init
 │   ├── pr.md                # /study:pr

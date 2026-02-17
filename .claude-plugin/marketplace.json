@@ -1,0 +1,31 @@
+{
+  "name": "study-group-plugin",
+  "owner": {
+    "name": "tmdgusya",
+    "email": "dev0jsh@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "study-group",
+      "source": "./",
+      "description": "GitHub 기반 책 스터디 관리: 저장소 초기화, PR 요약, Issue Q&A",
+      "version": "1.0.0",
+      "author": {
+        "name": "tmdgusya",
+        "email": "dev0jsh@gmail.com"
+      },
+      "category": "learning",
+      "keywords": [
+        "study-group",
+        "book-study",
+        "github",
+        "collaboration",
+        "summary",
+        "technical-writing"
+      ],
+      "homepage": "https://github.com/AgenticVibeLabs/study-group-plugin",
+      "repository": "https://github.com/AgenticVibeLabs/study-group-plugin.git",
+      "license": "MIT"
+    }
+  ]
+}
